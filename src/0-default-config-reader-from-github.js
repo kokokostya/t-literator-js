@@ -1,5 +1,5 @@
 class DefaultConfigReaderFromGitHub {
-    static #PROJECT_HOME_LINK = `https://raw.githubusercontent.com/shevchenkoartem/t-literator-configs/master/`;
+    static #PROJECT_HOME_LINK = `https://raw.githubusercontent.com/kokokostya/t-literator-configs/master/`;
 
     getConfigObject(cfgCode) {
         if (cfgCode == null || !cfgCode.length) {

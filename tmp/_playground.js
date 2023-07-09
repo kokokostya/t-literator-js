@@ -1,6 +1,6 @@
 // var script = document.createElement('script');
 // script.type = 'text/javascript';
-// script.src = `https://cdn.jsdelivr.net/gh/shevchenkoartem/t-literator-js/deploy/result/t-literator-js.js`;
+// script.src = `https://cdn.jsdelivr.net/gh/kokokostya/t-literator-js/deploy/result/t-literator-js.js`;
 // script.addEventListener('load', function() {
 //     var t = new Transliterator();
 //     t.useConfig("temivka");
