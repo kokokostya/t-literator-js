@@ -26,6 +26,8 @@ class Transliterator {
     
     #useDiacritics = true; //TODO: get rid of it
 
+    #sourceAlphabet = '';
+
     constructor(/*[optional]*/ rawConfigsOrImplementingGetConfigObject, /*[optional]*/ cfgName) {
         let useDefGetConfigObject = false;
         let rawConfigsToInitialize = [];
@@ -193,6 +195,7 @@ class Transliterator {
         }
 
         this.#config = this.#configsCache.getConfig(cfgCode);
+        this.#sourceAlphabet = this.getSourceAlphabet(false, true);
     }
 
     // TODO: kind of CONFIG functionality part
@@ -462,7 +465,7 @@ class Transliterator {
     }
 
     #markStartingPositions(txt) {
-        const letters = this.getSourceAlphabet(false, true)
+        const letters = this.#sourceAlphabet
             .concat([Transliterator.#UPPER_TECH_LETER, Transliterator.#LOWER_TECH_LETER])
             .join('');
 
